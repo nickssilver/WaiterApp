@@ -13,14 +13,17 @@
         android:theme="@style/Theme.WaiterApp"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreen"
-            android:exported="true" />
+            android:name=".WaiterPanel"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false"
-            android:windowSoftInputMode="stateVisible"/>
+            android:windowSoftInputMode="stateVisible" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
