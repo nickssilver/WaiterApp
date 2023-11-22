@@ -14,8 +14,8 @@
 
         <LinearLayout
             android:id="@+id/frameLayout"
-            android:layout_width="408dp"
-            android:layout_height="73dp"
+            android:layout_width="809dp"
+            android:layout_height="138dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_corners"
@@ -30,106 +30,104 @@
             <Button
                 android:id="@+id/buttonRunning"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="102dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button2_selector"
-                app:backgroundTint="@null"
-                android:padding="5dp"
+                android:drawableTop="@drawable/Runningorders"
+                android:scaleType="fitCenter"
                 android:text="Running Orders"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="11sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/buttonCart"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="102dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button1_selector"
-                app:backgroundTint="@null"
-                android:padding="5dp"
+                android:drawableTop="@drawable/Cart"
                 android:text="Cart"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="11sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/buttonProducts"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="102dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button3_selector"
-                app:backgroundTint="@null"
-                android:padding="5dp"
+                android:drawableTop="@drawable/Products"
                 android:text="Products"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="11sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/buttonOther"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="102dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button4_selector"
-                app:backgroundTint="@null"
-                android:padding="5dp"
+                android:drawableTop="@drawable/Others"
                 android:text="Others"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="11sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/frameLayout2"
-            android:layout_width="385dp"
-            android:layout_height="595dp"
+            android:layout_width="778dp"
+            android:layout_height="1050dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_corners"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="109dp">
-
-
+            tools:layout_editor_absoluteY="196dp">
 
 
             <Button
                 android:id="@+id/buttonCancel"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button2_selector"
-                app:backgroundTint="@null"
-                android:padding="5dp"
+                android:drawableStart="@drawable/Cancel"
                 android:text="Cancel"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/buttonDraft"
@@ -141,12 +139,12 @@
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button1_selector"
-                app:backgroundTint="@null"
                 android:padding="5dp"
                 android:text="Draft"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/buttonPlace"
@@ -158,12 +156,12 @@
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/button4_selector"
-                app:backgroundTint="@null"
                 android:padding="5dp"
                 android:text="Place Order"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
 
         </LinearLayout>
 
