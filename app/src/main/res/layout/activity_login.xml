@@ -60,7 +60,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/input_bg"
                 android:ems="4"
-                android:hint="_"
+                android:hint="  _"
                 android:inputType="number"
                 android:maxLength="1"
                />
