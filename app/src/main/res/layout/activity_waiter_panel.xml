@@ -18,7 +18,7 @@
             android:layout_height="138dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_corners"
+            android:background="@drawable/layoutbox"
             android:orientation="horizontal"
 
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,66 +104,233 @@
             android:layout_height="1050dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_corners"
+            android:background="@drawable/layoutbox"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="196dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/buttonCancel"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
+                <Button
+                    android:id="@+id/buttontable"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greybox"
+                    android:drawableStart="@drawable/ic_cancel"
+                    android:text="Table"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
+
+                <Spinner
+                    android:id="@+id/spinnerDraft"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layoutstroke"
+                    android:entries="@array/dropdown_items" />
+
+                <ImageButton
+                    android:id="@+id/buttonedit"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_edit"
+                    android:contentDescription="Edit Button"
+                    app:backgroundTint="@null"/>
+
+
+                <Button
+                    android:id="@+id/buttonadd"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button4_selector"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/button2_selector"
-                android:drawableStart="@drawable/ic_cancel"
-                android:text="Cancel"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@null" />
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
 
-            <Button
-                android:id="@+id/buttonDraft"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/button1_selector"
-                android:drawableStart="@drawable/ic_draft"
-                android:padding="5dp"
-                android:text="Draft"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@null" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
 
-            <Button
-                android:id="@+id/buttonPlace"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/button4_selector"
-                android:drawableStart="@drawable/ic_order"
-                android:padding="5dp"
-                android:text="Place Order"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@null" />
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Item"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Price"
+                        android:textAlignment="center"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qty"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Discount"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <!-- Here you can add TextViews or any other views to display your queried items -->
+                </TableRow>
+            </TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginTop="700dp"
+                android:layout_below="@id/table">
+
+                <LinearLayout
+                    android:id="@+id/frameLayout3"
+                    android:layout_width="762dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/greybox"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="196dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Total Payable:"
+                        android:textSize="48dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/frameLayout3"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button2_selector"
+                        android:drawableStart="@drawable/ic_cancel"
+                        android:text="Cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/buttonDraft"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button1_selector"
+                        android:drawableStart="@drawable/ic_draft"
+                        android:padding="5dp"
+                        android:text="Draft"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/buttonPlace"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button4_selector"
+                        android:drawableStart="@drawable/ic_order"
+                        android:padding="5dp"
+                        android:text="Place Order"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
 
         </LinearLayout>
 
