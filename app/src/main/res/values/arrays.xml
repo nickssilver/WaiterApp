@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dropdown_items">
+        <item>Dine-in</item>
+        <item>Walk-in</item>
+        <item>Take-away</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>
